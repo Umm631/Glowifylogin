@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Glowify</title>
+  <style>
+    body {
+      background-color: #ffe4ec;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-box {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(214, 51, 132, 0.2);
+      width: 300px;
+    }
+    h2 {
+      text-align: center;
+      color: #d63384;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      background-color: #d63384;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #c2256c;
+    }
+    .back {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .back a {
+      color: #d63384;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form action="login.php" method="POST">
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      
+      <button type="submit">Login</button>
+    </form>
+    <div class="back">
+      <a href="../homepage.html">← Back to Home</a>
+
+    </div>
+  </div>
+</body>
+</html>
